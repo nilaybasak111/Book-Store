@@ -4,7 +4,7 @@
   "description": "Online Book Store Mern Backend",
   "main": "index.js",
   "type": "module",
-  "homepage": "./",
+  "homepage": ".",
   "scripts": {
     "dev" : "nodemon Backend/index.js",
     "build" : "npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
