@@ -11,7 +11,7 @@ const _dirname = path.resolve();
 app.use(express.json());
 // Using Cors
 const corsOptions = {
-    origin : "http://localhost:5173",
+    origin : "https://my-book-store-cgxg.onrender.com/",
     credentials : true
 }
 app.use(cors(corsOptions));
