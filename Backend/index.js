@@ -33,7 +33,7 @@ app.use("/user", userRoute);
 // Serving Frontend Files to Backend
 app.use(express.static(path.join(_dirname, "/frontend/dist")));
 app.get('*', (req, res)=>{
-    res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
+    res.sendFile(path.resolve(_dirname, "Frontend", "dist", "index.html"));
 })
 
 app.listen(PORT, ()=>{
