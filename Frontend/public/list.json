@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Story Book",
+    "title": "Devdas",
+    "price": 0,
+    "catagory": "Free",
+    "image": "https://m.media-amazon.com/images/M/MV5BODM3ZDE2YjQtMTcyMi00NzdhLWEyYzUtMjIwNjFlNDlmNjgzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Horror Book",
+    "title": "The Exorsist",
+    "price": 0,
+    "catagory": "Free",
+    "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1652100161-3178if2aHgL._SL500_.jpg?crop=1xw:1xh;center,top&resize=980:*"
+  },
+  {
+    "id": 3,
+    "name": "Comedy Book",
+    "title": "Hera Pheri",
+    "price": 20,
+    "catagory": "Comedy",
+    "image": "https://m.media-amazon.com/images/M/MV5BNDZmMGEwMjQtNjFlNi00ZGIxLTlkZjItNmU3Mzg4Y2E0ZjUzXkEyXkFqcGc@._V1_.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Sports Book",
+    "title": "MS Dhoni",
+    "price": 40,
+    "catagory": "Sports",
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/33/M.S._Dhoni_-_The_Untold_Story_poster.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Music Book",
+    "title": "Arijit Singh",
+    "price": 40,
+    "catagory": "Music",
+    "image": "https://lastfm.freetls.fastly.net/i/u/ar0/ad7e05685bef8909f27c0d95bf79425c.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Local Book",
+    "title": "Local",
+    "price": 0,
+    "catagory": "Free",
+    "image": "https://champaca.in/cdn/shop/files/911k_jJZ4vL._SL1500_1024x1024@2x.jpg?v=1696228763"
+  },
+  {
+    "id": 7,
+    "name": "Foreign Book",
+    "title": "Foreign",
+    "price": 0,
+    "catagory": "Free",
+    "image": "https://m.media-amazon.com/images/I/91HUoAJOt2L._UF1000,1000_QL80_.jpg"
+  }
+]
