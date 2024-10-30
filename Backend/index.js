@@ -11,7 +11,7 @@ const _dirname = path.resolve();
 app.use(express.json());
 // Using Cors
 const corsOptions = {
-    origin : "https://localhost:3000",
+    origin : process.env.API_PATH_BACK,
     credentials : true
 }
 app.use(cors(corsOptions));
