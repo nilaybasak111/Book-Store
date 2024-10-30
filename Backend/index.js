@@ -11,7 +11,7 @@ const _dirname = path.resolve();
 app.use(express.json());
 // Using Cors
 const corsOptions = {
-    origin : "https://my-book-store-cgxg.onrender.com/",
+    origin : "https://localhost:3000",
     credentials : true
 }
 app.use(cors(corsOptions));
@@ -31,7 +31,7 @@ app.use("/book", bookRoute);
 app.use("/user", userRoute);
 
 // Serving Frontend Files to Backend
-app.use(express.static(path.join(_dirname, "/frontend/dist")));
+app.use(express.static(path.join(_dirname, "/Frontend/dist")));
 app.get('*', (req, res)=>{
     res.sendFile(path.resolve(_dirname, "Frontend", "dist", "index.html"));
 })
