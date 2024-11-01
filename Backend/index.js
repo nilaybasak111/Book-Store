@@ -13,7 +13,7 @@ const corsOptions = {
     origin : process.env.API_PATH_BACK,
     credentials : true
 }
-app.use(corsOptions());
+app.use(cors(corsOptions));
 
 // Importing Routes
 import bookRoute from "./route/BookRoute.js"
