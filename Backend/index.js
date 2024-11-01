@@ -4,7 +4,7 @@ import path from "path"
 import express from 'express'
 const app = express();
 dotenv.config();
-app.use(cors());
+//app.use(cors());
 app.use(express.json());
 
 const _dirname = path.resolve()
