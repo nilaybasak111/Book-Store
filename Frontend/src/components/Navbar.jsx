@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 // Importing Components
 import Login from "./Login";
-import Logout from "./Logout";
+import Logout from "./LogOut";
 import { useAuth } from "../contex/AuthProvider";
 
 export default function Navbar() {

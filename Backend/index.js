@@ -1,20 +1,10 @@
 import dotenv from 'dotenv'
 import cors from "cors"
-import path from "path"
 import express from 'express'
 const app = express();
 dotenv.config();
-
-// Defining Path of Files
-const _dirname = path.resolve();
-
+app.use(cors());
 app.use(express.json());
-// Using Cors
-const corsOptions = {
-    origin : process.env.API_PATH_BACK,
-    credentials : true
-}
-app.use(cors(corsOptions));
 
 // Importing Routes
 import bookRoute from "./route/BookRoute.js"
@@ -29,12 +19,6 @@ ConnectDB();
 // Defining Routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
-
-// Serving Frontend Files to Backend
-app.use(express.static(path.join(_dirname, "/Frontend/dist")));
-app.get('*', (req, res)=>{
-    res.sendFile(path.resolve(_dirname, "Frontend", "dist", "index.html"));
-})
 
 app.listen(PORT, ()=>{
     console.log(`Listening on Port ${PORT}`);

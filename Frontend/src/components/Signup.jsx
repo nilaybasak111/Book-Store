@@ -25,7 +25,7 @@ function Signup() {
       password: data.password,
     };
     await axios
-      .post(`${import.meta.env.VITE_API_PATH}/user/signup`, userInfo)
+      .post("http://localhost:3000/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (data) {
