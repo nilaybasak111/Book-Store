@@ -12,7 +12,7 @@ function Course() {
       try {
         //console.log(import.meta.env.VITE_DATABASE_URL);
         const getBookRes = await axios.get(
-          "http://localhost:3000/book"
+          `${import.meta.env.VITE_API_PATH}/book`
         );
         console.log("This is from Course.jsx \n", getBookRes.data);
         setBook(getBookRes.data);

@@ -10,7 +10,7 @@ app.use(express.json());
 const _dirname = path.resolve()
 
 const corsOptions = {
-    origin : "https://localhost:5173",
+    origin : process.env.API_PATH_BACK,
     credentials : true
 }
 app.use(corsOptions());
