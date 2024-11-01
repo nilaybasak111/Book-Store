@@ -12,9 +12,9 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        console.log(import.meta.env.VITE_DATABASE_URL);
+        //console.log(import.meta.env.VITE_DATABASE_URL);
         const getBookRes = await axios.get(
-          `${import.meta.env.VITE_DATABASE_URL}/book`
+          "http://localhost:3000/book"
         );
         const filterdata = getBookRes.data.filter((data) => data.catagory === "Free")
         console.log("This is from Freebook.jsx \n", filterdata);

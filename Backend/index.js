@@ -1,10 +1,19 @@
 import dotenv from 'dotenv'
 import cors from "cors"
+import path from "path"
 import express from 'express'
 const app = express();
 dotenv.config();
 app.use(cors());
 app.use(express.json());
+
+const _dirname = path.resolve()
+
+const corsOptions = {
+    origin : "https://localhost:5173",
+    credentials : true
+}
+app.use(corsOptions());
 
 // Importing Routes
 import bookRoute from "./route/BookRoute.js"
@@ -20,8 +29,12 @@ ConnectDB();
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
 
+// Serving Files Backend to Frontend
+app.use(express.static(path.join(_dirname, "Frontend/dist")));
+app.get('*', (req, res)=>{
+    res.sendFile(path.join(_dirname, "Frontend", "dist", "index.html"))
+})
+
 app.listen(PORT, ()=>{
     console.log(`Listening on Port ${PORT}`);
 })
-
-//4:00:00

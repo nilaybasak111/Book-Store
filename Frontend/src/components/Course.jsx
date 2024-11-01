@@ -10,9 +10,9 @@ function Course() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        console.log(import.meta.env.VITE_DATABASE_URL);
+        //console.log(import.meta.env.VITE_DATABASE_URL);
         const getBookRes = await axios.get(
-          `${import.meta.env.VITE_DATABASE_URL}/book`
+          "http://localhost:3000/book"
         );
         console.log("This is from Course.jsx \n", getBookRes.data);
         setBook(getBookRes.data);
