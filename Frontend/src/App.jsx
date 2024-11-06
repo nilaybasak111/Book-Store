@@ -7,6 +7,8 @@ import { useAuth } from "./contex/AuthProvider";
 import Home from "./components/Home/Home";
 import Courses from "./components/Courses/Courses";
 import Signup from "./components/Signup";
+import Contact from "./components/Contact";
+import About from "./components/About"
 
 function App() {
   const [authUser, setauthUser] = useAuth()
@@ -17,6 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/course" element={authUser?<Courses />:<Navigate to="/signup"/>} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Toaster />
       </div>
