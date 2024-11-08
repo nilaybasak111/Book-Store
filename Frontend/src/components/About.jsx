@@ -14,7 +14,7 @@ export default function About() {
             <span className="text-pink-500"> You!!</span> </h1>
           <p className="text-xl">
           My Name is Nilay Basak. This is my Full Stack Website. You can SignUp in this Website and Read Premium Books. I hope You Liked My Work & Website.
-          Thanks
+          <br>Thanks</br>
           </p>
           </div>
         </div>
