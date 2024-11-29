@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 // Defining Schema for Book
-const BookSchema = mongoose.Schema({
+const BookSchema = new mongoose.Schema({
     name : String,
     title : String,
     price : Number,

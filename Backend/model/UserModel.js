@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 // Defining Schema for User
-const UserSchema = mongoose.Schema({
+const UserSchema = new mongoose.Schema({
   fullname: {
     type: String,
     required: true,
